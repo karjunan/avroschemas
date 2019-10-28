@@ -16,7 +16,7 @@
         "items":"string"
         }
         ,"doc":"customer emails to be present , by default its null", "default":[]},
-    {"name":"customerAddress", "type": 
+    {"name":"customerAddress","default":null, "type":["null", 
         {
             "type" : "record",
             "namespace": "com.example",
@@ -30,8 +30,7 @@
                 {"name":"zipcode","type":"int","doc":"zip code of the area"}
             ]
             
-        },
-        "default":{}
+        }]    
     }
     ]
 }
