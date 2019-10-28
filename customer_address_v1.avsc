@@ -1,0 +1,13 @@
+{
+    "type" : "record",
+    "namespace": "com.example",
+    "name" : "customerAddress",
+    "doc" :"Customer details defined",
+    "fields" : [
+        {"name":"street1","type":"string","doc":"Street where the customer lives"},
+        {"name":"street2","type":["null","string"],"doc":"Street where the customer lives", "default":null},
+        {"name":"country","type":"string","doc":"country where the customer lives"},
+        {"name":"zipcode","type":"int","doc":"zip code of the area"}
+    ]
+    
+}
