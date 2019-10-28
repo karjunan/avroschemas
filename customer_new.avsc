@@ -1,0 +1,15 @@
+{
+    "type" : "record",
+    "namespace": "com.example",
+    "name" : "customer",
+    "doc" :"Customer details defined",
+    "fields" : [
+    {"name":"firstName", "type":"string", "doc":"firstname of customer"},
+    {"name":"middleName","type": ["null","string"],"default": null, "doc" :"middle name can be null and if present, take the name"}, 
+    {"name":"customerEmails","type": {
+                            "type":"array",
+                            "items":"string"
+                            }
+        ,"doc":"customer emails to be present , by default its null", "default":[]}
+    ]
+}
